@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Our Restaurant</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#order-summary">Your Order</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-item">
+        <h3>Pizza</h3>
+        <p>100.00</p>
+        <button class="order-btn" data-item="Pizza" data-price="100">Order</button>
+      </div>
+      <div class="menu-item">
+        <h3>Burger</h3>
+        <p>25.00</p>
+        <button class="order-btn" data-item="Burger" data-price="25">Order</button>
+      </div>
+      <div class="menu-item">
+        <h3>Pasta</h3>
+        <p>30.00</p>
+        <button class="order-btn" data-item="Pasta" data-price="30">Order</button>
+      </div>
+      <div class="menu-item">
+        <h3>Maggi</h3>
+        <p>10.00</p>
+        <button class="order-btn" data-item="Maggi" data-price="10">Order</button>
+      </div>
+    </section>
+
+    <section id="order-summary">
+      <h2>Your Order</h2>
+      <ul id="orderList"></ul>
+      <p>Total: <span id="totalPrice">0.00</span></p>
+
+      <h3>Customer Details</h3>
+      <form id="orderForm">
+        <input type="text" id="customerName" placeholder="Enter your name" required>
+        <input type="email" id="customerEmail" placeholder="Enter your email" required>
+        <input type="phone no" id="customerphone no" placeholder="Enter your phone no" required>
+        <nav><button type="submit">Place Order</button></nav>
+        
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Bhagat Restaurant</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
